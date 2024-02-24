@@ -11,16 +11,15 @@ import { PetModule } from './pet.module';
       host: 'localhost',
       port: 5432,
       username: 'postgres',
-      password: "1234",
+      password: '1234',
       database: 'softpetonline',
       autoLoadEntities: true,
-      synchronize: true, 
-      entities: [Pet]
+      synchronize: true,
+      entities: [Pet],
     }),
     PetModule,
   ],
 })
-
 export class AppModule {
   private readonly logger = new Logger(AppModule.name);
 
